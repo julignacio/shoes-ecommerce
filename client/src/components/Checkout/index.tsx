@@ -66,7 +66,7 @@ export default function Checkout() {
 
     const stripe = await stripePromise;
     // Call your backend to create the Checkout Session
-    const response = await fetch("http://localhost:3001/checkout", {
+    const response = await fetch("https://young-shore-62680.herokuapp.com/checkout", {
       method: "POST",
       body: JSON.stringify({ userId }), // data can be `string` or {object}!
       headers: {
