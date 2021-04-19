@@ -23,7 +23,7 @@ export const cache = new InMemoryCache({
 
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
   cache,
-  uri: 'http://localhost:3001/graphql',
+  uri: 'https://young-shore-62680.herokuapp.com/graphql',
   // headers: {
   //   authorization: localStorage.getItem('token') || '',
   // },
